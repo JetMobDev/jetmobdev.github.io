@@ -1,0 +1,73 @@
+POLÍTICAS DE PRIVACIDADE - JETMOBDEV
+====================================
+
+Lista de todas as políticas de privacidade das aplicações:
+
+1. Police
+   https://jetmobdev.github.io/app/Police/privacy.html
+
+2. Tazer
+   https://jetmobdev.github.io/app/Tazer/privacy.html
+
+3. Acelerador Mota
+   https://jetmobdev.github.io/app/aceleradormota/privacy.html
+
+4. Alarme Free
+   https://jetmobdev.github.io/app/alarmefree/privacy.html
+
+5. Alarms Sounds
+   https://jetmobdev.github.io/app/alarms_sounds/privacy.html
+
+6. Apito Canino
+   https://jetmobdev.github.io/app/apito_canino/privacy.html
+
+7. Big Buzinas
+   https://jetmobdev.github.io/app/big_buzinas_new/privacy.html
+
+8. Call Log Clear
+   https://jetmobdev.github.io/app/call_log_clear/privacy.html
+
+9. Drum
+   https://jetmobdev.github.io/app/drum/privacy.html
+
+10. Flash Notify
+    https://jetmobdev.github.io/app/flash_notify/privacy.html
+
+11. Funny Horns Cars
+    https://jetmobdev.github.io/app/funny_horns_cars/privacy.html
+
+12. IMC Adulto
+    https://jetmobdev.github.io/app/imc_adulto2/privacy.html
+
+13. IMC Infantil
+    https://jetmobdev.github.io/app/imc_inf/privacy.html
+
+14. Luz Zen
+    https://jetmobdev.github.io/app/luz_zen/privacy.html
+
+15. Máquina Barbear
+    https://jetmobdev.github.io/app/maquina_barbear/privacy.html
+
+16. Sabre Luz
+    https://jetmobdev.github.io/app/sabreluz/privacy.html
+
+17. Sinos e Campainhas
+    https://jetmobdev.github.io/app/sinos_e_campainhas/privacy.html
+
+18. Sons Grilos
+    https://jetmobdev.github.io/app/sons_grilos/privacy.html
+
+19. Sopa Letras
+    https://jetmobdev.github.io/app/sopa_letras/privacy.html
+
+20. Sound Machine
+    https://jetmobdev.github.io/app/soundmachine/privacy.html
+
+21. Sport Timer
+    https://jetmobdev.github.io/app/sport_timer/privacy.html
+
+22. Vibrador Digital
+    https://jetmobdev.github.io/app/vibrador_digital/privacy.html
+
+====================================
+Índice completo: https://jetmobdev.github.io/politicas-privacidade.html
