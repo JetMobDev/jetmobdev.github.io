@@ -38,22 +38,23 @@
 
 <h3>Data you choose to send</h3>
 <ul>
-		<li>If you turn on the e-mail alert, the app sends an e-mail through the SMTP server and account that you configure yourself. The e-mail contains the time of the alert, the intruder photo (if any) and a map link with the location (if any). It goes to the address you choose; JetMob does not receive it.</li>
+		<li>If you turn on the e-mail alert, the app sends an e-mail through the SMTP server and account that you configure yourself. The e-mail contains the time of the alert, the intruder photo (if any) and a map link with the location (if any). It goes to the address you choose; JetMob does not receive it. The password of that e-mail account is stored encrypted on your device only and is used solely to send these alerts.</li>
 </ul>
 
 <h3>Sensitive permissions and features</h3>
 <p>We use the following features in our App that are deemed sensitive on Google Play:</p>
 <ul>
-		<li><b>CAMERA</b><br>Takes a photo of whoever tries to unlock or move your device (the intruder photo). The photo is saved on your phone and, only if you enable the e-mail alert, attached to that e-mail.</li>
-		<li><b>ACCESS_FINE_LOCATION</b><br>Optional. Adds the device location to the intrusion report and to the e-mail alert, so you can find your device. Only used when you enable it in Settings.</li>
-		<li><b>ACCESS_COARSE_LOCATION</b><br>Approximate version of the location above.</li>
-		<li><b>READ_MEDIA_IMAGES</b><br>Lets you choose an image from your gallery for the lock screen or alarm. The image is not uploaded.</li>
-		<li><b>USE_BIOMETRIC</b><br>Lets you disarm the alarm with your fingerprint or face. Biometric data stays in Android and is never accessed by the app.</li>
-		<li><b>POST_NOTIFICATIONS</b><br>Shows the alarm status and the intrusion-detected notification.</li>
-		<li><b>SYSTEM_ALERT_WINDOW</b><br>Shows the alarm screen over other apps when an intrusion is detected.</li>
-		<li><b>FOREGROUND_SERVICE</b><br>Keeps the alarm running while the screen is off.</li>
-		<li><b>RECEIVE_BOOT_COMPLETED</b><br>Re-arms the alarm after the device restarts.</li>
-		<li><b>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</b><br>Prevents Android from stopping the alarm in the background.</li>
+		<li><b>CAMERA</b><br>Takes a photo of whoever moves your device or enters a wrong code while the alarm is armed (the intruder photo). The camera is only used at that moment, never to record video or audio. The photo is saved in your device&#039;s gallery (Pictures/Alarm/NMT), so it stays there if you uninstall the app and may be backed up by a gallery or cloud-backup app you use (e.g. Google Photos). Only if you enable the e-mail alert is it attached to that e-mail.</li>
+		<li><b>ACCESS_FINE_LOCATION</b><br>Optional, off by default. Adds the device location to the intrusion report (stored on your device) and to the e-mail alert, so you can find your device. Only used when you enable it in Settings, and only at the moment of an intrusion (also with the screen off, while the alarm is armed); it is never sent to us.</li>
+		<li><b>ACCESS_COARSE_LOCATION</b><br>Approximate version of the location above, used when precise location is not available or not allowed.</li>
+		<li><b>READ_EXTERNAL_STORAGE</b><br>Android 12 and older only. Only requested if you choose your phone&#039;s wallpaper as the background of the alarm&#039;s unlock screen, and to show the intruder photos in the app&#039;s reports. Images you pick yourself use Android&#039;s photo picker, which needs no permission. Nothing is uploaded.</li>
+		<li><b>USE_BIOMETRIC</b><br>Lets you disarm the alarm with your fingerprint (or face, where your device supports it) or your phone&#039;s own screen lock. Biometric data and your screen lock stay in Android and are never accessed by the app.</li>
+		<li><b>POST_NOTIFICATIONS</b><br>Shows the alarm status, the intrusion-detected notification and, after a restart, a reminder to re-arm the alarm.</li>
+		<li><b>USE_FULL_SCREEN_INTENT</b><br>When the alarm is triggered with the screen off or locked, wakes the screen and shows the alarm&#039;s unlock screen on top of the lock screen, the same way an alarm clock does.</li>
+		<li><b>SYSTEM_ALERT_WINDOW</b><br>Shows the alarm&#039;s unlock screen over other apps when an intrusion is detected or when you disarm the alarm while the phone is unlocked.</li>
+		<li><b>FOREGROUND_SERVICE</b><br>Keeps the alarm watching the motion sensor (and, if enabled, the charger) while armed with the screen off, plays the siren and, if you enabled them, takes the intruder photo and reads the location at the moment of an intrusion. A notification is shown while the alarm is armed.</li>
+		<li><b>RECEIVE_BOOT_COMPLETED</b><br>If the alarm was armed when the device was switched off or restarted: when you use a PIN or pattern and the phone has a secure screen lock, the alarm arms itself again as soon as the device starts, even before it is unlocked (so it keeps protecting it); otherwise a notification lets you re-arm it with one tap. Settings and reports are kept in Android&#039;s device-protected storage for this.</li>
+		<li><b>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</b><br>Asks you to exclude the app from battery optimisation, so Android does not stop the alarm while it is armed in the background.</li>
 </ul>
 
 <h3>Advertisement</h3>
