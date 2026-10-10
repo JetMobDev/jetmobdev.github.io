@@ -150,7 +150,8 @@ $DATA = <<<'JSON'
       "child_directed": false, "uses_ads": true, "uses_billing": true,
       "sdks": ["Google AdMob", "Google User Messaging Platform", "Google Play Billing"],
       "data_leaves_device": [
-        "Call log entries, contacts and backups stay on your device. If you use the feedback option, the e-mail is composed through your own e-mail app."
+        "Call log entries, contacts and backups stay on your device. If you use the feedback option, the e-mail is composed through your own e-mail app.",
+        "Google AdMob and Google Play Billing receive the advertising ID and the data needed to show ads and process purchases."
       ],
       "permissions": {
         "READ_CONTACTS": "Shows contact names for calls and lets you build allow/block lists.",
@@ -160,6 +161,8 @@ $DATA = <<<'JSON'
         "CALL_PHONE": "Lets you place a call from inside the app.",
         "READ_PHONE_STATE": "Detects when a call ends so the app can apply your cleaning rules.",
         "SYSTEM_ALERT_WINDOW": "Shows the end-of-call screen over other apps.",
+        "READ_EXTERNAL_STORAGE": "Reads the backup files you choose to restore.",
+        "WRITE_EXTERNAL_STORAGE": "Saves call-log backup files to your device when you create a backup.",
         "POST_NOTIFICATIONS": "Shows notifications about automatic actions.",
         "FOREGROUND_SERVICE": "Keeps the automatic cleaning running in the background.",
         "RECEIVE_BOOT_COMPLETED": "Restarts the automatic cleaning after the device reboots."
