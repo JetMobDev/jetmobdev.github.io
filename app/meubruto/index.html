@@ -101,10 +101,10 @@
 
   var play = $("play").href;
   var android = /android/i.test(navigator.userAgent);
-  // Android: o intent abre o jogo, ou a Play Store se não estiver instalado. iOS e outros: o esquema meubruto://.
+  // Android: o intent abre o jogo, ou a Play Store se não estiver instalado. iOS e outros: o esquema brutepack://.
   $("open").href = android
-    ? "intent://" + path + "#Intent;scheme=meubruto;package=pt.jm.meubruto;S.browser_fallback_url=" + encodeURIComponent(play) + ";end"
-    : "meubruto://" + path;
+    ? "intent://" + path + "#Intent;scheme=brutepack;package=pt.jm.meubruto;S.browser_fallback_url=" + encodeURIComponent(play) + ";end"
+    : "brutepack://" + path;
 
   $("copy").addEventListener("click", function () {
     var done = function () { $("copy").textContent = T.copied; };
