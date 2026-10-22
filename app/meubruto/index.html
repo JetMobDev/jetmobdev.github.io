@@ -53,6 +53,7 @@
       <a class="btn alt" id="play" href="https://play.google.com/store/apps/details?id=pt.jm.meubruto">Google Play</a>
       <a class="btn alt hidden" id="appstore" href="#">App Store</a>
     </div>
+    <p class="hint hidden" id="fallback"></p>
     <p class="hint" id="hint">Ainda não tens o jogo? Instala-o e volta a tocar no link.</p>
   </section>
   <footer>JetMob · <a href="../../privacidade.html">Privacidade</a></footer>
@@ -105,6 +106,12 @@
   $("open").href = android
     ? "intent://" + path + "#Intent;scheme=brutepack;package=pt.jm.meubruto;S.browser_fallback_url=" + encodeURIComponent(play) + ";end"
     : "brutepack://" + path;
+
+  // Se o jogo não abriu (a página continua à vista ao fim de 2 s), mostra a alternativa.
+  $("open").addEventListener("click", function () {
+    $("fallback").textContent = pt ? "Não abriu? Confirma que o jogo está instalado neste mesmo espaço do telemóvel. Se o link trazia um código, copia-o e usa-o no jogo." : "Didn't open? Make sure the game is installed in this same space on your phone. If the link had a code, copy it and use it in the game.";
+    setTimeout(function () { if (!document.hidden) $("fallback").classList.remove("hidden"); }, 2000);
+  });
 
   $("copy").addEventListener("click", function () {
     var done = function () { $("copy").textContent = T.copied; };
